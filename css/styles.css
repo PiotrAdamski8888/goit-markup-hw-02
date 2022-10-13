@@ -1,6 +1,17 @@
+:root {
+  --black-main: #212121;
+  --second-black: #000000;
+  --main-blue: #2196f3;
+  --background-grey: #2f303a;
+  --main-white: #ffffff;
+  --second-white: #f5f4fa;
+  --main-silver: #757575;
+  --white-transparent: rgba(255, 255, 255, 0.6);
+ 
+}
 body {
   font-family: "Roboto", sans-serif;
-  font-color: #212121;
+  color: var(--main-black);
 }
 
 .logo {
@@ -8,7 +19,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: #000;
+  color: var(--second-black);
   text-decoration: none;
   cursor: pointer;
 }
@@ -17,11 +28,17 @@ ul {
 }
 
 .link:hover {
-  color: #2196f3;
+  color: var(--main-blue);
   cursor: pointer;
 }
+.link {
+  color: var(--black-main);
+}
 span.logo-color {
-  color: #2196f3;
+  color: var(--main-blue);
+}
+.link-header {
+  color: var(--main-silver);
 }
 .header-font {
   font-weight: 500;
@@ -40,17 +57,25 @@ h1 {
   font-size: 44px;
   line-height: 1.36;
 }
-.button-studio {
+.button-agencja {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.85;
   cursor: pointer;
 }
-.button-portfolio {
+.button-agencja:hover {
+  background-color: var(--main-blue);
+  color: var(--main-white);
+}
+.button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   cursor: pointer;
+}
+.button:hover {
+  background-color: var(--main-blue);
+  color: var(--main-white);
 }
 h2 {
   font-weight: 700;
@@ -73,6 +98,7 @@ h4 {
   line-height: 1.18;
 }
 .figcaption-p-studio {
+  color: var(--main-silver);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -83,7 +109,27 @@ h4 {
   line-height: 2;
 }
 .figcaption-p-portfolio {
+  color: var(--main-silver);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
+}
+footer {
+  background-color: var(--background-grey);
+}
+.logo-color-footer {
+  color: var(--main-white);
+}
+.addres-color {
+  color: var(--main-white);
+}
+.link-footer {
+  color: var(--white-transparent);
+}
+
+.background-team {
+  background-color: var(--second-white);
+}
+.background-main-upper {
+  background-color: var(--background-grey);
 }
