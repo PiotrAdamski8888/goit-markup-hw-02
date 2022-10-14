@@ -7,7 +7,6 @@
   --second-white: #f5f4fa;
   --main-silver: #757575;
   --white-transparent: rgba(255, 255, 255, 0.6);
- 
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -23,7 +22,7 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
-ul {
+.ul-nopoint {
   list-style: none;
 }
 
@@ -33,12 +32,19 @@ ul {
 }
 .link {
   color: var(--black-main);
+  text-decoration: none;
 }
 span.logo-color {
   color: var(--main-blue);
 }
 .link-header {
   color: var(--main-silver);
+  text-decoration: none;
+ 
+}
+.link-header:hover {
+  color: var(--main-blue);
+  cursor: pointer;
 }
 .header-font {
   font-weight: 500;
@@ -52,15 +58,20 @@ span.logo-color {
   line-height: 1.71;
   text-decoration: none;
 }
-h1 {
+.h1-class {
+  color: var(--main-white);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
 }
 .button-agencja {
+  color: var(--black-main);
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.85;
+  background-color: var(--second-white);
   cursor: pointer;
 }
 .button-agencja:hover {
@@ -68,26 +79,31 @@ h1 {
   color: var(--main-white);
 }
 .button {
+  color: var(--black-main);
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  background-color: var(--second-white);
   cursor: pointer;
 }
 .button:hover {
   background-color: var(--main-blue);
   color: var(--main-white);
 }
-h2 {
+.h2-class {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
 }
-h4 {
+.h4-class {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
 }
 .text-lorem {
+  color: var(--main-silver);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -122,9 +138,15 @@ footer {
 }
 .addres-color {
   color: var(--main-white);
+  font-style: normal;
 }
 .link-footer {
   color: var(--white-transparent);
+  text-decoration: none;
+}
+.link-footer:hover {
+  color: var(--main-blue);
+  cursor: pointer;
 }
 
 .background-team {
