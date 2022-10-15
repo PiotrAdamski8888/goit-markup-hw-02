@@ -1,5 +1,5 @@
 :root {
-  --black-main: #212121;
+  --main-black: #212121;
   --second-black: #000000;
   --main-blue: #2196f3;
   --background-grey: #2f303a;
@@ -31,16 +31,15 @@ body {
   cursor: pointer;
 }
 .link {
-  color: var(--black-main);
+  color: var(--main-black);
   text-decoration: none;
 }
-span.logo-color {
+.logo-color {
   color: var(--main-blue);
 }
 .link-header {
   color: var(--main-silver);
   text-decoration: none;
- 
 }
 .link-header:hover {
   color: var(--main-blue);
@@ -65,7 +64,7 @@ span.logo-color {
   line-height: 1.36;
 }
 .button-agencja {
-  color: var(--black-main);
+  color: var(--main-black);
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -79,7 +78,7 @@ span.logo-color {
   color: var(--main-white);
 }
 .button {
-  color: var(--black-main);
+  color: var(--main-black);
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -93,6 +92,7 @@ span.logo-color {
   color: var(--main-white);
 }
 .h2-class {
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -130,7 +130,7 @@ span.logo-color {
   font-size: 16px;
   line-height: 1.87;
 }
-footer {
+.footer {
   background-color: var(--background-grey);
 }
 .logo-color-footer {
